@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<options>
+	<storages>
+		<storage 
+			class="ru.aristar.jnuget.sources.ClassicPackageSource" 
+			saveIndex="true"
+			indexed="true" 
+			storageName="DefaultSource"
+			public="true"
+			canPush="true"
+			canDelete="true">
+			<properties>
+				<property name="folderName" 
+					value="${nuget.home}/Packages/"/>
+			</properties>
+		</storage>
+		<storage class=""
+			indexed="false" canPush="false" canDelete="false"
+			storageName="All" public="true">
+			<properties>
+				<property 
+					name="innerSourceNames" 
+					value="DefaultSource"/>
+			</properties>
+		</storage>
+
+	</storages>
+</options>
