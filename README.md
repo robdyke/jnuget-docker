@@ -12,7 +12,8 @@ run following command
     docker build -t [imagename] .
     docker run -v [package storage directory]:/var/lib/jnuget -p [port for hosting]:8080 [imagename]
 
-then, open http://localhost:[port for hosting] and you will get the start page of jnuget.
+then, open http://localhost:[port for hosting]/jnuget and you will get the start page of jnuget.
+initial login ID is "admin:adminadmin"
 your setting and pushed packages are stored in [package storage directory].
 
 ## Caution
