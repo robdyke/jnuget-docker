@@ -8,4 +8,6 @@ RUN mkdir -p /var/lib/jnuget/Packages
 
 ENV NUGET_HOME /var/lib/jnuget
 
+EXPOSE 8080
+
 VOLUME ["/var/lib/jnuget","/usr/local/tomcat/logs","/usr/local/tomcat/conf"]
