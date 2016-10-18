@@ -2,9 +2,7 @@
 Dockerfile for [jnuget](https://bitbucket.org/aristar/jnuget) (Pure Java NuGet hosting server)
 
 ## Prerequisites
-
-you must install [docker](http://docs.docker.com/) in your system.
-if you do not have linux,use [boot2docker](http://boot2docker.io/)
+jwilder/nginx-proxy works well with the dockerfile
 
 ## Usage
 run following command
