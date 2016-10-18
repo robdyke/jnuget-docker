@@ -10,9 +10,9 @@ if you do not have linux,use [boot2docker](http://boot2docker.io/)
 run following command
 
     docker build -t [imagename] .
-    docker run -v [package storage directory]:/var/lib/jnuget -p [port for hosting]:8080 [imagename]
+    docker run -v [package storage directory]:/var/lib/jnuget [imagename]
 
-then, open http://localhost:[port for hosting]/jnuget and you will get the start page of jnuget.
+then, open http://localhost:[port] and you will get the start page of jnuget.
 
 initial login ID is "admin:adminadmin"
 
