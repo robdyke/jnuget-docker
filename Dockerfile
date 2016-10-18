@@ -1,6 +1,6 @@
 FROM tomcat:8.0-jre8
 
-COPY jnuget-0.8.0-SNAPSHOT.war /usr/local/tomcat/webapps/jnuget.war
+COPY jnuget-0.8.2-SNAPSHOT.war /usr/local/tomcat/webapps/jnuget.war
 COPY jnuget.config.xml /var/lib/jnuget/jnuget.config.xml
 COPY jnuget.users.xml /var/lib/jnuget/jnuget.users.xml
 
