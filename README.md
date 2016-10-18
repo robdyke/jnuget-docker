@@ -14,6 +14,9 @@ run following command
 
 then, open http://localhost:[port] and you will get the start page of jnuget.
 
+This version is sets jNuget as the default(and only) tomcat webapp, so you can access it directly from the domain root.
+If using with jwilder/nginx-proxy, adding the -e VIRTUAL_HOST="****" to your run command will bind jNuget to port 80. 
+
 initial login ID is "admin:adminadmin"
 
 your setting and pushed packages are stored in [package storage directory].
