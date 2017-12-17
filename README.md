@@ -1,5 +1,5 @@
 # jnuget-docker
-Dockerfile for [jnuget](https://bitbucket.org/aristar/jnuget) (Pure Java NuGet hosting server)
+Dockerfile for [jnuget](https://bitbucket.org/aristar/jnuget) - a Pure Java NuGet hosting server
 
 ## Docker
 
