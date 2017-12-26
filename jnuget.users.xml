@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <users>
-    <user name="admin" password="adminadmin">
+    <user name="admin" password="admin">
         <role>jnuget-admin</role>
     </user>
 </users>

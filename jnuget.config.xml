@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<options>    
+<options>
+    <proxy noProxy="false" useSystemProxy="true">
+        <host></host>
+        <login></login>
+        <password></password>
+    </proxy>
     <storages>
-        <storage class="ru.aristar.jnuget.sources.ClassicPackageSource" indexed="false" storageName="DefaultSource"
-                 public="true" canPush="true" canDelete="true" >
+        <storage class="ru.aristar.jnuget.sources.ClassicPackageSource" indexed="true" canPush="true" canDelete="true" storageName="DefaultSource" public="true" saveIndex="false" refreshInterval="1">
             <properties>
                 <property name="folderName" value="${nuget.home}/Packages/"/>
             </properties>
+            <afterTriggers/>
+            <beforeTriggers/>
         </storage>
     </storages>
 </options>
