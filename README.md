@@ -5,15 +5,15 @@ Dockerfile for [jnuget](https://bitbucket.org/aristar/jnuget) - a Pure Java NuGe
 
 ### Build Image
 
-    docker build -t [imagename] .
+    docker build -t robdykedotcom/jnuget-docker:latest .
 
 ### Run Container
 
-    docker run -v [package storage directory]:/var/lib/jnuget [imagename]
+    docker run -v $(pwd):/var/lib/jnuget robdykedotcom/jnuget-docker:latest
 
 Example using current directory as storage
 
-    docker run -p 8080:8080 -v $(pwd):/var/lib/jnuget [imagename]
+    docker run --rm -p 8080:8080 -v $(pwd)/Packages:/var/lib/jnuget/Packages robdykedotcom/jnuget-docker:latest
 
 ## Usage
 
@@ -25,8 +25,7 @@ Example:
 
 ### Credentials
 * User: admin
-* Password: adminadmin
-
+* Password: admin
 
 
 ## Notes
@@ -48,3 +47,13 @@ Your setting and pushed packages are stored in [package storage directory].
 The Dockerfile does not set configuration for security (e.g. TLS,Authentication).
 
 If [package storage directory] is not set changes (user setting,pushed packages) are lost when container process is killed.
+
+## Authors
+
+* [Rob Dyke](https://github.com/robdyke)
+* [Asynchrony](https://gitlab.com/asynchrony) - [jnuget-docker](https://github.com/asynchrony/jnuget-docker)
+
+
+## License
+
+This project is licensed under the MIT License See [LICENSE](LICENSE) file for details.
